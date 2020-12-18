@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "968362418861",
+    "project_id": "investire-ef2f5",
+    "storage_bucket": "investire-ef2f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968362418861:android:275d1a38886cdd876d1c24",
+        "android_client_info": {
+          "package_name": "com.eam.investire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968362418861-n6l3rr0oqj6ihfv8ehu98qajo5tthc39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eam.investire",
+            "certificate_hash": "38cf504188a2e49401f29933ed1985b351d91c11"
+          }
+        },
+        {
+          "client_id": "968362418861-4cllgifb5jvnddhsb0q7a2otg8hu8mcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJS5yrQcGDg8k9rPgIgUzwnXV53NPvzfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968362418861-4cllgifb5jvnddhsb0q7a2otg8hu8mcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
