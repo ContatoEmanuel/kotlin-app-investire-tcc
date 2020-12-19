@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Investire</string>
+    <string name="completo_facil_de_usar_e_gr_tis">Completo, facil de usar e grátis!</string>
+    <string name="saiba_como_est_o_os_seus_investimentos">Saiba como estão os seus investimentos!</string>
+    <string name="nunca_mais_esque_a_de_pagar_uma_conta">Nunca mais esqueça de pagar uma conta!</string>
+    <string name="receba_alertas_de_distribui_o_dos_proventos">Receba alertas de distribuição dos proventos!</string>
+    <string name="tudo_organizado_no_celular">Tudo organizado no celular!</string>
+    <string name="use_no_seu_smartphone">Use no seu smartphone!</string>
+    <string name="crie_sua_conta_gr_tis">Crie sua conta grátis!</string>
+    <string name="junte_se_a_essa_nova_comunidade">Junte-se a essa nova comunidade!</string>
+    <string name="cadastre_se">CADASTRE-SE</string>
+    <string name="j_tenho_conta">Já tenho conta</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="termos_de_uso">Termos de uso</string>
+    <string name="acesse_sua_conta">Acesse sua conta!</string>
+    <string name="acessar">Acessar</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="todo">TODO</string>
 </resources>
