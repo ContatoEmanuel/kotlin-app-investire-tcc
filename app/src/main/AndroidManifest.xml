@@ -18,9 +18,11 @@
         <activity
             android:name=".activity.PrincipalActivity"
             android:label="@string/title_activity_principal"
+            android:theme="@style/principalTheme" />
+        <activity android:name=".activity.CadastroActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".activity.CadastroActivity" />
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/Theme.Intro">

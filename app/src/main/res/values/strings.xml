@@ -28,7 +28,15 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="todo">TODO</string>
     <string name="data">Data</string>
-    <string name="r_00_00">R$ 00.00</string>
+    <string name="r_00_00">R$ 00,00</string>
     <string name="categoria">Categoria</string>
     <string name="descri_o">Descrição</string>
+    <string name="carregando">Carregando…</string>
+    <string name="r_0">R$ 0,00</string>
+    <string name="saldo_geral">Saldo geral</string>
+    <string name="sair">Sair</string>
+    <string name="ocultar_saldo">Ocultar Saldo</string>
+    <string name="titulo">Titulo</string>
+    <string name="valor">valor</string>
+    <string name="string_titulo" />
 </resources>

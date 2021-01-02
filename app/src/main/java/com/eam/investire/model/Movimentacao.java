@@ -14,6 +14,7 @@ public class Movimentacao {
     private String descricao;
     private String tipo;
     private double valor;
+    private String key;
 
     public Movimentacao() {
     }
@@ -58,14 +59,22 @@ public class Movimentacao {
         this.valor = valor;
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     public void salvar(String dataEscolhida) {
         FirebaseAuth autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         String idUsuario = Base64Custom.codificarBase64(Objects.requireNonNull(Objects.requireNonNull(autenticacao.getCurrentUser()).getEmail()));
-        String diaMesAno = DateCustom.mesAnoDataEscolhida(dataEscolhida);
+        String mesAno = DateCustom.mesAnoDataEscolhida(dataEscolhida);
         DatabaseReference firebase = ConfiguracaoFirebase.getFirebaseDatabase();
         firebase.child("movimentacao")
                 .child(idUsuario)
-                .child(diaMesAno)
+                .child(mesAno)
                 .push()
                 .setValue(this);
     }
