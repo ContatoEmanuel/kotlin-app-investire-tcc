@@ -4,24 +4,27 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat"
-        android:fullBackupContent="@xml/backup_descriptor">
+        android:theme="@style/Theme.AppCompat">
         <activity
             android:name=".activity.DespesasActivity"
             android:theme="@style/despesaTheme" />
-        <activity android:name=".activity.ReceitasActivity"
-            android:theme="@style/receitaTheme"/>
+        <activity
+            android:name=".activity.ReceitasActivity"
+            android:theme="@style/receitaTheme" />
         <activity
             android:name=".activity.PrincipalActivity"
             android:label="@string/title_activity_principal"
             android:theme="@style/principalTheme" />
-        <activity android:name=".activity.CadastroActivity"
+        <activity
+            android:name=".activity.CadastroActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".activity.LoginActivity"
+        <activity
+            android:name=".activity.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".activity.MainActivity"

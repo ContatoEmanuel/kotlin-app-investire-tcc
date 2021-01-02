@@ -49,7 +49,7 @@
         android:layout_height="50dp"
         app:mcv_selectionColor="@color/colorPrimaryDark"
         app:mcv_showOtherDates="all"
-        app:mcv_tileSize="50dp"/>
+        app:mcv_tileSize="50dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerMovimentos"

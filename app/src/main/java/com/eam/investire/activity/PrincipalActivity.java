@@ -95,7 +95,7 @@ public class PrincipalActivity extends AppCompatActivity {
         movimentacaoRef.removeEventListener(valueEventListenerMovimentacoes);
     }
 
-    public void swipe(){
+    public void swipe() {
         ItemTouchHelper.Callback itemTouch = new ItemTouchHelper.Callback() {
             @Override
             public int getMovementFlags(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder) {
@@ -118,7 +118,7 @@ public class PrincipalActivity extends AppCompatActivity {
         new ItemTouchHelper(itemTouch).attachToRecyclerView(recyclerView);
     }
 
-    public void excluirMovimentacao(@NonNull RecyclerView.ViewHolder viewHolder){
+    public void excluirMovimentacao(@NonNull RecyclerView.ViewHolder viewHolder) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
 
         alertDialog.setTitle("Excluir Movimentação da Conta");
@@ -152,18 +152,18 @@ public class PrincipalActivity extends AppCompatActivity {
         alert.show();
     }
 
-    public void atualizarSaldo(){
+    public void atualizarSaldo() {
         String emailUsuario = Objects.requireNonNull(autenticacao.getCurrentUser()).getEmail();
         assert emailUsuario != null;
         String idUsuario = Base64Custom.codificarBase64(emailUsuario);
         usuarioRef = firebaseRef.child("usuarios").child(idUsuario);
 
-        if(movimentacao.getTipo().equals("r")){
+        if (movimentacao.getTipo().equals("r")) {
             receitaTotal = receitaTotal - movimentacao.getValor();
             usuarioRef.child("receitaTotal").setValue(receitaTotal);
         }
 
-        if(movimentacao.getTipo().equals("d")){
+        if (movimentacao.getTipo().equals("d")) {
             despesaTotal = despesaTotal - movimentacao.getValor();
             usuarioRef.child("despesaTotal").setValue(despesaTotal);
         }

@@ -10,15 +10,10 @@ public class Usuario {
     private String nome;
     private String email;
     private String senha;
-    private Double receitaTotal = 0.00;
-    private Double despesaTotal = 0.00;
+    private double receitaTotal = 0.00;
+    private double despesaTotal = 0.00;
 
     public Usuario() {
-    }
-
-    @Exclude
-    public String getIdUsuario() {
-        return idUsuario;
     }
 
     public void setIdUsuario(String idUsuario) {
@@ -54,16 +49,8 @@ public class Usuario {
         return receitaTotal;
     }
 
-    public void setReceitaTotal(Double receitaTotal) {
-        this.receitaTotal = receitaTotal;
-    }
-
     public Double getDespesaTotal() {
         return despesaTotal;
-    }
-
-    public void setDespesaTotal(Double despesaTotal) {
-        this.despesaTotal = despesaTotal;
     }
 
     public void salvar() {

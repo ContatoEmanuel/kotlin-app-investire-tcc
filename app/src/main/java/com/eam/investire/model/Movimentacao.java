@@ -9,7 +9,6 @@ import com.google.firebase.database.DatabaseReference;
 import java.util.Objects;
 
 public class Movimentacao {
-    private String data;
     private String categoria;
     private String descricao;
     private String tipo;
@@ -19,12 +18,7 @@ public class Movimentacao {
     public Movimentacao() {
     }
 
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
+    public void setData() {
     }
 
     public String getCategoria() {

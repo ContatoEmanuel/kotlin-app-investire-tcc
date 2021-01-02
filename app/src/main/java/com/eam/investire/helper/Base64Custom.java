@@ -8,7 +8,4 @@ public class Base64Custom {
         return Base64.encodeToString(texto.getBytes(), Base64.DEFAULT).replaceAll("([\\n\\r])", "");
     }
 
-    public static String decodificarBase64(String textoCodificado) {
-        return new String(Base64.decode(textoCodificado, Base64.DEFAULT));
-    }
 }
