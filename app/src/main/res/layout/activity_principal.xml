@@ -21,13 +21,16 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_principal" />
+    <include
+        android:id="@+id/include4"
+        layout="@layout/content_principal" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="10dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
         fab:menu_colorNormal="@color/colorAccent"
         fab:menu_colorPressed="@color/colorAccent"
         fab:menu_icon="@drawable/ic_adicionar_branco_24">
@@ -56,4 +59,14 @@
 
     </com.github.clans.fab.FloatingActionMenu>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_anchor="@+id/include4"
+        app:layout_anchorGravity="bottom|center"
+        fab:adSize="BANNER"
+        fab:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -20,6 +20,10 @@ import com.eam.investire.config.ConfiguracaoFirebase
 import com.eam.investire.helper.Base64Custom
 import com.eam.investire.model.Movimentacao
 import com.eam.investire.model.Usuario
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -48,6 +52,8 @@ class PrincipalActivity : AppCompatActivity() {
     private var movimentacao: Movimentacao? = null
     private var movimentacaoRef: DatabaseReference? = null
     private var mesAnoSelecionado: String? = null
+    private lateinit var mAdView : AdView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
@@ -65,6 +71,15 @@ class PrincipalActivity : AppCompatActivity() {
         recyclerView!!.layoutManager = layoutManager
         recyclerView!!.setHasFixedSize(true)
         recyclerView!!.adapter = adapterMovimentacao
+        MobileAds.initialize(this)
+
+        val adView = AdView(this)
+        adView.adSize = AdSize.BANNER
+        adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
     }
 
     override fun onStart() {
